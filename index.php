@@ -25,6 +25,26 @@
         </table>
 			</div>
 		</div>
+  </div>
+  <div class="modal fade" tabindex="-1" role="dialog" id="Modal">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content shadow">
+	      <div class="modal-body">
+          <form action="" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" value="" placeholder="Имя"/>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="last_name" value="" placeholder="Фамилия"/>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="pos" value="" placeholder="Должность"/>
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary">Добавить</button>
+          </form>
+	      </div>
+	    </div>
+	  </div>
 	</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
