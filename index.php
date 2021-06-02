@@ -1,3 +1,6 @@
+<?php
+include 'func.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +14,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col mt-1">
+        <?=$success ?>
         <button class="btn btn-success mb-1" data-toggle="modal" data-target="#Modal"><i class="fa fa-user-plus"></i></button>
         <table class="table shadow ">
           <thead class="thead-dark">
