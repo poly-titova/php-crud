@@ -32,8 +32,9 @@ include 'func.php';
               <td><?=$value['last_name'] ?></td>
               <td><?=$value['pos'] ?></td>
               <td>
-                <a href="?edit=<?=$value['id'] ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a> 
+                <a href="?edit=<?=$value['id'] ?>" class="btn btn-success btn-sm" data-toggle="modal" data-target="#editModal< ?=$value['id'] ?>"><i class="fa fa-edit"></i></a> 
                 <a href="?delete=<?=$value['id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                <?php require 'modal.php'; ?>
               </td>
             </tr>
             <?php } ?>

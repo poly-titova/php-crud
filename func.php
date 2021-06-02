@@ -25,3 +25,15 @@ if (isset($_POST['submit'])) {
 $sql = $pdo->prepare("SELECT * FROM `users`");
 $sql->execute();
 $result = $sql->fetchAll();
+
+// Update
+$edit_name = $_POST['edit_name'];
+$edit_last_name = $_POST['edit_last_name'];
+$edit_pos = $_POST['edit_pos'];
+$get_id = $_GET['id'];
+if (isset($_POST['edit-submit'])) {
+	$sqll = "UPDATE users SET name=?, last_name=?, pos=? WHERE id=?";
+	$querys = $pdo->prepare($sqll);
+	$querys->execute([$edit_name, $edit_last_name, $edit_pos, $get_id]);
+	header('Location: '. $_SERVER['HTTP_REFERER']);
+}
