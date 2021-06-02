@@ -20,3 +20,8 @@ if (isset($_POST['submit'])) {
 } else {
     echo 'error';
 }
+
+// Read
+$sql = $pdo->prepare("SELECT * FROM `users`");
+$sql->execute();
+$result = $sql->fetchAll();

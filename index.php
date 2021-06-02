@@ -25,6 +25,18 @@ include 'func.php';
               <th>Должность</th>
               <th>Действие</th>
             </tr>
+            <?php foreach ($result as $value) { ?>
+            <tr>
+              <td><?=$value['id'] ?></td>
+              <td><?=$value['name'] ?></td>
+              <td><?=$value['last_name'] ?></td>
+              <td><?=$value['pos'] ?></td>
+              <td>
+                <a href="?edit=<?=$value['id'] ?>" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></a> 
+                <a href="?delete=<?=$value['id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+              </td>
+            </tr>
+            <?php } ?>
           </thead>
         </table>
 			</div>
